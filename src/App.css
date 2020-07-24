@@ -1,20 +1,10 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +25,89 @@
   to {
     transform: rotate(360deg);
   }
+}
+h1{
+  color: rgb(0, 0, 0);
+}
+.topnav{
+  z-index: 5;
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+.topnav a{
+  font-size: 20px;
+  font-weight: 700;
+  box-sizing: inherit;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: all 1s;
+}
+.topnav a:hover{
+  opacity: 1;
+  transition: all 1s;
+}
+.row1{
+  box-sizing: inherit;
+  margin: auto;  
+  justify-content: center;
+  font-family: 'Open Sans';
+}
+.main{
+  margin-top: 5%;
+}
+.carousel{
+  height: 10%;
+}
+.top{
+  padding-top: 12%;
+  z-index: 5;
+  position: relative;
+  text-align: center;
+
+}
+.top h1{
+  color: white;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  font-family: 'Open Sans';
+}
+.btn-row{
+  justify-content: center;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  
+}
+.btn-row button{
+  margin: 10px;
+  width: 15%;
+  padding:10px 0px 10px 0px;
+  background-color: rgb(151, 158, 144);
+  text-align: center;
+  color: black;
+  border-radius: 30px;
+  border-color: transparent;
+  font-size: 16px;
+  transition: all 1s;
+  font-family: 'Open Sans';
+}
+.btn-row button:hover{
+  width: 18%;
+  padding: 15px 0 15px 0;
+  font-size: 18px;
+  transition: all 1s;
+  font-family: 'Open Sans';
+  cursor: grab
 }
