@@ -52,11 +52,11 @@ h1{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 16px;
-  opacity: 0.8;
+  opacity: 1;
   transition: all 1s;
 }
 .topnav a:hover{
-  opacity: 1;
+  opacity: 0.7;
   transition: all 1s;
 }
 .row1{
@@ -67,14 +67,35 @@ h1{
 }
 .main{
   margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container h2{
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 32px;
+  color: black;
 }
 .carousel{
-  height: 10%;
+  margin-top: 45%;
+}
+.carou{
+  position: relative;
 }
 .top{
-  padding-top: 12%;
-  z-index: 5;
-  position: relative;
+  padding-top: 15%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   text-align: center;
 
 }
@@ -109,5 +130,89 @@ h1{
   font-size: 18px;
   transition: all 1s;
   font-family: 'Open Sans';
-  cursor: grab
+  cursor: pointer
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 100%;
+  margin: auto;
+  transition: all 1s;
+  text-align: center;
+  font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+}
+.card:hover{
+  scale: 1.05;
+  transition: all 1s;
+  cursor: pointer;
+}
+.card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.num{
+  color: grey;
+  font-size: 22px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(151, 158, 144);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: all 1s;
+}
+
+.card button:hover {
+  opacity: 0.5;
+  transition: all 1s;
+}
+.annonces{
+  margin: auto 10%;
+  display:grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  row-gap:50px ;
+  column-gap: 10px;
+}
+.divider{
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  opacity: 0.15;
+  margin: 2% 0;
+}
+.cardv{
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  max-width: 300px;
+  font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.cardv p{
+  color: black;
+  opacity: 0.5;
+}
+.cardv i{
+  color: black;
+}
+.valeurs{
+  margin: 15px 25px;
+  display: flex;
+  gap: 25px;
+  flex-direction: row;
 }

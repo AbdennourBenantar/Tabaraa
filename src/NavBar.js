@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import 'font-awesome/css/font-awesome.min.css';
+
 class NavBar extends React.Component {
     render(){
         return (
@@ -10,16 +12,16 @@ class NavBar extends React.Component {
                 </div>
                 <div className="row1">
                     <Link to='/'>
-                    <a href="#">Acceuil</a>
+                    <a href="#"><i className="fa fa-home fa-lg"></i>&nbsp;&nbsp;Acceuil</a>
                     </Link>
                     <Link to='/dernierBesoins'>
-                    <a href="#">Derniers Besoins</a>
+                    <a href="#"><i className="fa fa-bolt fa-lg"></i>&nbsp;&nbsp;Derniers Besoins</a>
                     </Link>
                     <Link to='/mesBesoins'>
-                    <a href="#">Mes Besoins</a>
+                    <a href="#"><i className="fa fa-cart-arrow-down fa-lg"></i>&nbsp;&nbsp;Mes Besoins</a>
                     </Link>
                     <Link to='/monCompte'>
-                    <a href="#">Mon Compte</a>
+                    <a href="#"><i className="fa fa-id-card fa-lg"></i>&nbsp;&nbsp;Mon Compte</a>
                     </Link>
                 
                 </div>
