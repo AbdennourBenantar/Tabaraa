@@ -37,8 +37,10 @@ h1{
   top: 0;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-direction: row;
+ 
 
 }
 .topnav a{
@@ -198,10 +200,15 @@ h1{
   border-width: 2px;
   max-width: 300px;
   font-family: 'Open Sans';
+  margin: 2% auto;
+  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   display: flex;
   flex-direction: column;
+  row-gap:20px ;
+  column-gap: 0px;
+  padding: 25px 20px ;
   text-align: center;
-  padding: 20px;
 }
 .cardv p{
   color: black;
@@ -211,8 +218,192 @@ h1{
   color: black;
 }
 .valeurs{
-  margin: 15px 25px;
+  margin: 35px 55px;
   display: flex;
-  gap: 25px;
+  gap: 20px;
   flex-direction: row;
+  flex-flow: nowrap;
+}
+.connexion{
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-sizing: border-box;
+  margin: 30px 20px;
+  width: 60%;
+}
+.header{
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.dialogTitle{
+  line-height: 1.4;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+.body{
+  position: relative;
+  padding: 15px;
+}
+.input{
+  margin-bottom: 15px;
+}
+.checkbox radio{
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  
+}
+.row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:20px 120px 0 120px;
+  padding-bottom: 20px;
+
+}
+
+.form-control{
+  display: block;
+  width: 95%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555555;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: box-shadow ease-in-out .15s,border-color ease-in-out .15s;
+}
+.pwdforget a{
+  text-decoration: none;
+  background-color: transparent;
+  color: #064f6f;
+}
+.footer{
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.footer a{
+  text-decoration: none;
+  background-color: transparent;
+  color: #064f6f;
+}
+.center{
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.fancy{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+.fancy span::before,.fancy span::after{
+  content: '';
+  position: absolute;
+  height: 55%;
+  border-bottom: 1px solid #6c6464;
+  top: 0;
+  
+}
+.row2{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.help{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #aba4a4;
+  font-size: 14px;
+}
+.right{
+  float: right;
+}
+.gap{
+  height: 50px;
+}
+.container-row{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  margin: 20px;
+}
+.list-group{
+  margin-bottom: 20px;
+  padding-left: 0;
+  text-align: justify;
+  font-family: 'Open Sans';
+}
+.item{
+  font-size: 1.1em;
+  color: #6c6464;
+  background: rgba(255, 255, 255,.8);
+  position: relative;
+  display: block;
+  font-family: 'Open Sans';
+  padding: 10px 20px;
+  margin-bottom: -1px;
+  border: 1px solid #ddd;
+}
+.item i{
+  margin-right: 20px;
+  
+}
+.item:first-child{
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.item:last-child{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#para{
+  font-size: 16px;
+  padding: 20px;
+  text-align: left;
+}
+#titleh2{
+  margin-top: 65px;
+  text-decoration-line: underline;
+}
+.pic{
+  background-color: black;
+  width: 100%;
+
+}
+.connexionc{
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-sizing: border-box;
+  margin: 40px auto;
+  width: 60%;
+}
+.dbesoins{
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  margin-bottom: 5%;
+}
+.dbesoins h3{
+  padding-top: 1%;
+}
+.row button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(151, 158, 144);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: all 1s;
 }

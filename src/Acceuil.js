@@ -8,8 +8,7 @@ import Valeur from './Valeurs';
 
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
-
-var annoncesList=[
+export var annoncesList=[
     {
         "imagePath":"/assets/image1.jpg",
         "title":"this is a title",
@@ -41,7 +40,9 @@ var annoncesList=[
         "description":"This is a description"
     },
 ];
+
 class Acceuil extends Component{
+    
     
     render(){
         

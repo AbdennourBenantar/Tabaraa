@@ -6,6 +6,7 @@ import DBesoins from './dernierBesoins';
 import MBesoins from './mesBesoins';
 import Acceuil from './Acceuil';
 import Compte from './Compte';
+import Register from './Register';
 
 class App extends Component{
     render(){
@@ -25,6 +26,9 @@ class App extends Component{
                        </Route>
                        <Route exact path="/monCompte">
                             <Compte />
+                       </Route>
+                       <Route exact path="/register">
+                           <Register />
                        </Route>
                 </Switch>
                 </div> 
